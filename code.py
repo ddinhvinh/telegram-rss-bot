@@ -49,7 +49,7 @@ def send_message(chat_id, text):
       }
       try:
                 r = requests.post(url, data=payload, timeout=15)
-                return r.status_code == 200
+            return r.status_code == 200
 except Exception as e:
         print(f'[SEND_ERR] {e}')
         return False
